@@ -14,6 +14,9 @@ display: none;
     --secondary: #FF6969;
     --tertiary: #41B06E;
     --complimentary: #22A699;
+    --tertiary-light: #8DECB4;
+    --complimentary-light: #78D5D7;
+    --secondary-light: #fcb0b3;
 }
 
 body{
@@ -73,7 +76,14 @@ button{
     border-radius: 5px;
     border: 1px solid;
     position: relative;
-    
+}
+
+button:hover{
+ background-color: var(--secondary-light);
+}
+
+.arrow:hover{
+    background-color: var(--tertiary-light);
 }
 
 .backspace{
@@ -95,4 +105,8 @@ button{
 
 .right{
     background-color: var(--tertiary);
+}
+
+.special-button:hover{
+    background-color: var(--complimentary-light);
 }
