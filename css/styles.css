@@ -9,6 +9,13 @@
 display: none;
 }
 
+:root{
+    --primary: #FFF5E0;
+    --secondary: #FF6969;
+    --tertiary: #41B06E;
+    --complimentary: #22A699;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -22,40 +29,68 @@ body{
     border: 1px solid;
     gap: .2rem;
     padding: .6rem;
+    background-color: var(--primary);
 }
 
 .tab{
     grid-column: 1 / span 2;
+    background-color: var(--complimentary);
 }
 
 .caps{
     grid-column: 1 / span 2;
+    background-color: var(--complimentary);
 }
 
 .enter{
     grid-column: 14 / span 2;
+    background-color: var(--complimentary);
 }
 
 .shift1{
     grid-column: 1 / span 3;
+    background-color: var(--complimentary);
 }
 
 .shift2{
     grid-column: 14 / span 2;
+    background-color: var(--complimentary)
 }
 
 .space{
     grid-column: 5 / span 5;
+    background-color: var(--complimentary);
 }
 
 .control-left{
     grid-column: 1 / span 2;
+    background-color: var(--complimentary);
 }
 
 button{
     padding: .5rem;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    border: 1px solid;
 }
 
 .backspace{
     grid-column: 14 / span 2;
+    background-color: var(--complimentary);
+}
+
+.left{
+    background-color: var(--tertiary);
+}
+
+.up{
+    background-color: var(--tertiary);
+}
+
+.down{
+    background-color: var(--tertiary);
+}
+
+.right{
+    background-color: var(--tertiary);
 }
